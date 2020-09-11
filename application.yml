@@ -2,13 +2,13 @@ spirng:
   profiles:
     active:
       - test
---
-spring:
-  profiles:test
-    application:
-      name:xx1
---
-spring:
-  profiles:prod
-    application:
-      name:xx2
+---
+spring: 
+  profiles: test
+    application:  
+      name: xx1
+---
+spring: 
+  profiles: prod
+    application:  
+      name: xx2
