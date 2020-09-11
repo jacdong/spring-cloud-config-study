@@ -1,5 +1,25 @@
-server: 
-  port: 8000
 spring:
+  profiles:
+    active: dev
+
+---
+#开发环境配置
+spring:
+  profiles: dev
+  application:  
+    name: micro-cloud-config-client
+
+server:
+  port: 8000
+
+
+---
+#生产环境配置
+spring:
+  profiles: prod
   application:
     name: micro-cloud-config-client
+
+server:
+  port: 8100
+
