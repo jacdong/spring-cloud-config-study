@@ -18,7 +18,7 @@ busi:
 ---
 #生产环境配置
 spring:
-  profiles: dev
+  profiles: prod
   application:  
     name: micro-cloud-eureka-client-user
 
