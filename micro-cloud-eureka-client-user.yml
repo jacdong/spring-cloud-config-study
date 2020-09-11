@@ -11,7 +11,8 @@ spring:
 
 server:
   port: 8801
-  
+busi:
+  open: N
 
 
 ---
@@ -24,3 +25,5 @@ spring:
 server:
   port: 8901
 
+busi:
+  open: N
