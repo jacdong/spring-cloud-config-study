@@ -1,1 +1,26 @@
+spring:
+  profiles:
+    active: dev
+
+---
+#开发环境配置
+spring:
+  profiles: dev
+  application:  
+    name: micro-cloud-eureka-client-user
+
+server:
+  port: 8801
+  
+
+
+---
+#生产环境配置
+spring:
+  profiles: dev
+  application:  
+    name: micro-cloud-eureka-client-user
+
+server:
+  port: 8901
 
