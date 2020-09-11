@@ -1,14 +1,35 @@
-spirng:
+spring:
   profiles:
-    active:
-      - test
+    active: dev
+
 ---
-spring: 
-  profiles: test
-    application:  
-      name: xx1
+#开发环境配置
+spring:
+  profiles: dev
+  application:  
+    name: xx1
+
+server:
+  port: 1000
+
+
 ---
-spring: 
-  profiles: prod
-    application:  
-      name: xx2
+#测试环境配置
+spring:
+  profiles: stg
+  application:
+    name: xx2
+
+server:
+  port: 1001
+
+
+---
+#生产环境配置
+spring:
+  profiles: prd
+  application:  
+    name: xx3
+
+server:
+  port: 1002
