@@ -1,1 +1,29 @@
+spring:
+  profiles:
+    active: dev
 
+---
+#开发环境配置
+spring:
+  profiles: dev
+  application:  
+    name: micro-cloud-eureka-client-order
+
+server:
+  port: 8802
+busi:
+  open: Y
+
+
+---
+#生产环境配置
+spring:
+  profiles: prod
+  application:  
+    name: micro-cloud-eureka-client-order
+
+server:
+  port: 8902
+
+busi:
+  open: N
